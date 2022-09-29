@@ -26,9 +26,9 @@ Having decided upon a record and field structure, I now had to consider how best
 RebDB simply used Rebol's versatile `block!` structure to represent tables.
 
 	[
-		1 "Bob Brown" 12-Feb-1973
-		2 "John Citizen" 3-Mar-1982
-		3 "Jane Doe" 28-Nov-1978
+	    1 "Bob Brown" 12-Feb-1973
+	    2 "John Citizen" 3-Mar-1982
+	    3 "Jane Doe" 28-Nov-1978
 	]
 
 This has the advantage of being fast as there is no conversion to / from other values, but it is memory intensive. In addition to the space required to store each value, each value requires an extra 16 bytes or so to track `datatype!` and `context!` information. This isn't a problem for large `series!` but is not very efficient for `scalar!` values.
