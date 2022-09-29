@@ -25,5 +25,5 @@ From a Rebol console:
 > Updated 3-Jan-2014
 
 - **DESIGN.md** describes the design of the Storage Manager.
-- **INTERNALS.md*** describes the implementation of the Storage Manager.
+- **INTERNALS.md** describes the implementation of the Storage Manager.
 - **OPERATION.md** describes the operation of the Storage Manager.
