@@ -8,12 +8,12 @@ The RebSM table object is fairly simple.
 
 	>> test: db-make [integer! string! date!]
 	== make object! [
-		types: [integer! string! date!]
-		key-cols: 1
-		idx-size: 2
-		bytes-free: 0
-		idx: #{}
-		dat: #{}
+	    types: [integer! string! date!]
+	    key-cols: 1
+	    idx-size: 2
+	    bytes-free: 0
+	    idx: #{}
+	    dat: #{}
 	]
 
 Property   | Datatype!           | Explanation
@@ -66,15 +66,15 @@ The structure of the first record is:
 
 	#{010109426F622042726F776E0407B5020C}
 
-		#{01}                 ; Bytes (1)
-		#{01}                 ; Value (1)
-		#{09}                 ; Bytes (9)
-		#{426F622042726F776E} ; Value ("Bob Brown")
-		#{04}                 ; Bytes (4)
-		#{07B5020C}           ; Value (12-Feb-1973)
-			#{07B5}           ; 1973
-			#{02}             ; 2
-			#{0C}             ; 12
+	    #{01}                 ; Bytes (1)
+	    #{01}                 ; Value (1)
+	    #{09}                 ; Bytes (9)
+	    #{426F622042726F776E} ; Value ("Bob Brown")
+	    #{04}                 ; Bytes (4)
+	    #{07B5020C}           ; Value (12-Feb-1973)
+	        #{07B5}           ; 1973
+	        #{02}             ; 2
+	        #{0C}             ; 12
 
 ## Value encoding
 
