@@ -1,4 +1,6 @@
-# Rebol Storage Manager
+# Rebol Storage Manager v3.0.4
+
+> Updated 4-Jan-2014
 
 RebSM is a small but highly efficient storage manager with a SQL-like interface.
 
@@ -22,8 +24,8 @@ From a Rebol console:
 
 ## Documentation
 
-> Updated 3-Jan-2014
+> Updated 4-Jan-2014
 
-- **DESIGN.md** describes the design of the Storage Manager.
-- **INTERNALS.md** describes the implementation of the Storage Manager.
-- **OPERATION.md** describes the operation of the Storage Manager.
+- [Design Guide](DESIGN.md) - Describes the design of the Storage Manager.
+- [Internals Guide](INTERNALS.md) - Describes the implementation of the Storage Manager.
+- [Operation Guide](OPERATION.md) - Describes the operation of the Storage Manager.
