@@ -88,7 +88,7 @@ Rebol values are binary encoded according to the following rules:
 
 All encoded values have a byte length indicator (1 byte) preceding them.
 
-!note All Rebol values are encoded and decoded without loss of information.
+**Note:** All Rebol values are encoded and decoded without loss of information.
 
 ## Search methods
 
@@ -116,11 +116,11 @@ A fetch is undertaken when conditions are provided. A linear scan is performed a
 
 ### Row deletion
 
-When `db-remove` removes a row it does so by removing the row's offset entry from the table's index and incrementing the table's `bytes-free` count by the number of bytes 'orphaned'.
+When `db-remove` removes a row it does so by removing the row's offset entry from the table's index and incrementing the table's `bytes-free` count by the number of bytes *orphaned*.
 
 ### Row change
 
-When `db-change` changes a row it compares the size of the new row against that of the old ... if it's less than or equal then the new row overwrites the old (potentially leaving a "hole" if the old row was larger), otherwise the new row is appended and the index offset reset (which will orphan the old row as above).
+When `db-change` changes a row it compares the size of the new row against that of the old ... if it's less than or equal then the new row overwrites the old (potentially leaving a *hole* if the old row was larger), otherwise the new row is appended and the index offset reset (which will orphan the old row as above).
 
 ### Compact
 
